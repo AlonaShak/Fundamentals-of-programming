@@ -8,18 +8,19 @@ printf("Enter x: ");
 err=scanf("%lf",&x);
 if (err!=1){printf("Error"); return -1;}
 prod=1.0;
+
 for (k=3;k<=5;k++)
 {
 
     sum=0.0;
     for (n=1;n<=7;n++)
     {
-        sum+=pow((double)n,2.0)/pow((double)k,(double)n);
+        sum=sum + pow(n,2.0)/pow(k,n);
     }
-    prod*=pow((double)x,(double)k)*sum;
+    prod=prod*pow(x,k)*sum;
 }
 
-printf("Sum=%f\nProduction=%f\n",sum,prod);
+printf("Production=%f\n",prod);
 
 
 return 0;

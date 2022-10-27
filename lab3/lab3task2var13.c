@@ -15,7 +15,7 @@ for (int i=0; i<n;i++)
     if (b3[i]<0)
     {
         sum+=i;
-        k++;
+        k=k+1;
     }
     printf("b3[%d]:%f \n",i,b3[i]);
 
