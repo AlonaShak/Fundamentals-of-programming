@@ -6,7 +6,7 @@ void printarray(int n, int arr[], char name[]);
 void arraymin(int n,int arr[], char name[]);
 void sortarray(int n,int arr[], char name[]);
 int main(){
-int n1=10,n2=15,n3=20;
+const int n1=10,n2=11,n3=12;
 int b1[n1],b2[n2],b3[n3];
 char b1name[]="b1",b2name[]="b2",b3name[]="b3";
 srand(time(NULL));
@@ -67,7 +67,7 @@ void arraymin(int n,int arr[],char name[])
 void sortarray(int n,int arr[], char name[])
 {
     int temp;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n-1;i++)
     {
         for (int j=i+1; j<n; j++)
         {
